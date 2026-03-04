@@ -2,11 +2,88 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Ton Prénom Nom</title>
+    <title>Portfolio – Comer Alisation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #222;
+            text-align: center;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 30px 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projet {
+            margin: 20px 0;
+        }
+        footer {
+            background: #111;
+            color: white;
+            padding: 10px;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
-    <h1>Ton Prénom Nom</h1>
-    <h2>Réalisateur Audiovisuel</h2>
-    <p>Bienvenue sur mon portfolio.</p>
+<body>
+    <header>
+        <h1>Comer Alisation</h1>
+        <p>Réalisateur Audiovisuel</p>
+        <nav>
+            <a href="#showreel">Showreel</a> |
+            <a href="#projets">Projets</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="showreel">
+        <h2>Showreel</h2>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/TON_VIDEO_ID" 
+                title="Showreel" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="projets">
+        <h2>Mes projets</h2>
+        <div class="projet">
+            <h3>Projet 1</h3>
+            <iframe width="320" height="180" 
+                    src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="projet">
+            <h3>Projet 2</h3>
+            <iframe width="320" height="180" 
+                    src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : ton.email@example.com</p>
+        <p>LinkedIn / Instagram : <a href="#">Ton lien</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Comer Alisation – Portfolio Réalisateur</p>
+    </footer>
 </body>
 </html>
